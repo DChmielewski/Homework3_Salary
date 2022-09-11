@@ -25,19 +25,9 @@ public class Utils {
         System.out.println("4 - End program ");
     }
 
-    static void getSumOfPayments(List<Employee> employees) {
-        int summaryPayment = 0;
-        for (Employee e : employees) {
-            summaryPayment += e.getPayment();
-        }
-        System.out.println("Summary of all payments is: " + summaryPayment);
-    }
 
-    public static void allEmployees(List<Employee> employees) {
-        for (Employee myEmployee : employees) {
-            System.out.println(myEmployee.toString());
-        }
-    }
+
+
 
     public static int getNumber() {
 

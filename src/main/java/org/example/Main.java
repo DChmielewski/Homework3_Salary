@@ -13,9 +13,9 @@ public class Main {
         while (true) {
             menu();
             switch (getNumber()) {
-                case 1 -> Utils.getSumOfPayments(company.employees);
-                case 2 -> Utils.allEmployees(company.employees);
-                case 3 -> company.employees.add(newEmployeeAdder());
+                case 1 -> company.getSumOfPayments();
+                case 2 -> company.allEmployees();
+                case 3 -> Company.employees.add(newEmployeeAdder());
                 case 4 -> System.exit(0);
                 default -> System.out.println("Choose number from menu list: ");
             }
